@@ -38,7 +38,8 @@ body {
 /* モバイル端末用のスタイル調整 */
 @media (max-width: 768px) {
   body {
-    background-size: contain;
+    background-image: url('dezainn_mobile.png'); /* モバイル用の背景画像 */
+    background-size: cover;
   }
 
   #book {
@@ -60,7 +61,7 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   box-sizing: border-box;
   padding: 20px;
-  transition: transform 0.9s, z-index 1s;
+  transition: transform 1.5s, z-index 1s;
   transform-origin: left;
   z-index: 2;
 }
