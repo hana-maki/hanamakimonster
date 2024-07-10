@@ -1,5 +1,3 @@
-/* styles.css */
-
 /* 表紙のスタイル */
 .cover {
   background-image: url('hyousi.png');
@@ -16,39 +14,22 @@
 /* 通常ページのスタイル */
 .page:not(.cover) {
   background-image: url('peji.png');
-  background-size: cover; /* この行を追加 */
+  background-size: cover;
   border: 1px solid #251e16;
 }
-
 
 body {
   background-image: url('dezainn.png');
   background-size: cover;
 }
 
-
 #book {
-  width: 700px; /* 本の幅を調整 */
-  height: 1000px; /* 本の高さを調整 */
+  width: 700px;
+  height: 1000px;
   position: relative;
   perspective: 1000px;
   margin: 50px auto;
 }
-
-/* 通常の背景画像 */
-body {
-  background-image: url('dezainn.png');
-  background-size: cover;
-}
-
-@media (max-width: 768px) {
-  body {
-    background-image: url('dezainn_mobile.png') !important; /* モバイル用の背景画像 */
-    background-size: cover !important;
-    -webkit-background-size: cover !important; /* iPhone用のスタイル */
-  }
-}
-
 
 .page {
   width: 100%;
@@ -66,11 +47,11 @@ body {
 
 .flipped {
   transform: rotateY(-180deg);
-  z-index: 1; /* めくられたページが前面に来るように */
+  z-index: 1;
 }
 
 .current {
-  z-index: 2; /* 現在のページが最前面に来るように */
+  z-index: 2;
 }
 
 .monster {
@@ -82,9 +63,9 @@ body {
 }
 
 .monster img {
-  max-width: 100%; /* 画像の最大幅を80%にする */
-  height: auto; /* 画像の高さを自動調整にする */
-  pointer-events: none; /* 画像のコピーを防ぐ */
+  max-width: 100%;
+  height: auto;
+  pointer-events: none;
 }
 
 .description {
@@ -92,18 +73,16 @@ body {
   text-align: center;
 }
 
-/* styles.css の更新部分 */
-
 .description h2 {
-  font-family: 'DotGothic16', sans-serif; /* ドット文字のフォントを指定 */
-  font-size: 50px; /* フォントサイズを50pxに設定 */
-  color: #ffffff; /* フォントの色を白に設定 */
+  font-family: 'DotGothic16', sans-serif;
+  font-size: 50px;
+  color: #ffffff;
 }
 
 .description p {
-  font-family: 'Arial', sans-serif; /* Arialフォントを指定 */
-  font-size: 30px; /* フォントサイズを16pxに設定 */
-  color: #ffffff; /* フォントの色をダークグレーに設定 */
+  font-family: 'Arial', sans-serif;
+  font-size: 30px;
+  color: #ffffff;
 }
 
 .navigation {
@@ -113,8 +92,8 @@ body {
 }
 
 .navigation button {
-  padding: 15px 30px; /* ボタンの内側の余白を大きくする */
-  font-size: 18px; /* ボタンのテキストサイズを大きくする */
+  padding: 15px 30px;
+  font-size: 18px;
   margin: 0 10px;
   background-color: #000000;
   color: white;
@@ -125,4 +104,13 @@ body {
 
 .navigation button:hover {
   background-color: #7e67a0;
+}
+
+/* モバイル端末用のスタイル調整 */
+@media (max-width: 768px) {
+  body {
+    background-image: url('dezainn_mobile.png') !important;
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+  }
 }
