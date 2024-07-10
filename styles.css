@@ -107,10 +107,40 @@ body {
 }
 
 /* モバイル端末用のスタイル調整 */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   body {
     background-image: url('dezainn_mobile.png') !important;
     background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
     -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+  }
+
+  #book {
+    width: 90%; /* 画面幅に対する割合 */
+    height: auto; /* 高さを自動調整 */
+    max-height: 80vh; /* ビューポートの高さの80%を最大とする */
+    margin: 20px auto;
+  }
+
+  .page {
+    padding: 10px;
+  }
+
+  .description h2 {
+    font-size: 30px;
+  }
+
+  .description p {
+    font-size: 18px;
+  }
+
+  .navigation button {
+    padding: 10px 20px;
+    font-size: 16px;
   }
 }
+
