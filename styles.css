@@ -35,22 +35,20 @@ body {
   margin: 50px auto;
 }
 
+/* 通常の背景画像 */
+body {
+  background-image: url('dezainn.png');
+  background-size: cover;
+}
+
 /* モバイル端末用のスタイル調整 */
 @media (max-width: 768px) {
   body {
     background-image: url('dezainn_mobile.png'); /* モバイル用の背景画像 */
     background-size: cover;
   }
-
-  #book {
-    width: 90%;
-    height: auto;
-  }
-
-  .page {
-    height: auto;
-  }
 }
+
 
 .page {
   width: 100%;
